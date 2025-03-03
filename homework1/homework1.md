@@ -13,26 +13,31 @@
 > 优化方案：第一种是把乘法操作的 CPI 减至 $1$，第二种是把求平方根操作的 CPI 减至 $50$。试比较两种方案对系统性能的提高程度，并尝试总结系统优化方案的规律。
 
 没有改进之前，整个系统的 CPI 为
+
 $$
 \text{CPI}_0 = 1 \times 25\% + 1 \times 25\% + 2 \times 15\% + 1 \times 20\% + 10 \times 10\% + 100 \times 5\% = 7.
 $$
 
 若使用第一种方案进行优化，整个系统的 CPI 为
+
 $$
 \text{CPI}_1 = 1 \times 25\% + 1 \times 25\% + 1 \times 15\% + 1 \times 20\% + 10 \times 10\% + 100 \times 5\% = 6.85.
 $$
 
 若使用第二种方案进行优化，整个系统的 CPI 为
+
 $$
 \text{CPI}_2 = 1 \times 25\% + 1 \times 25\% + 2 \times 15\% + 1 \times 20\% + 10 \times 10\% + 50 \times 5\% = 4.5.
 $$
 
 因此，第一种优化方案的性能提升为
+
 $$
 \frac{\text{CPI}_1 - \text{CPI}_0}{\text{CPI}_0} = \frac{7 - 6.85}{7} \approx 2.1\%
 $$
 
 第二种优化方案的性能提升为
+
 $$
 \frac{\text{CPI}_2 - \text{CPI}_0}{\text{CPI}_0} = \frac{7 - 4.5}{7} \approx 35.7\%
 $$
@@ -53,11 +58,13 @@ $$
 设改进前该程序执行时间为 $T_0$，则存储器访问时间为 $0.3T_0$，其余时间为 $0.7T_0$。
 
 使用 L1 Cache 和 L2 Cache 后，存储器访问时间变为
+
 $$
 0.8 \times 0.3T_0 \times \frac{1}{4} + 0.2 \times 0.3T_0 \times \frac{1}{2} = 0.09T_0,
 $$
 
 故改进前后整个程序的计算加速比为
+
 $$
 S_n = \frac{T_0}{0.7T_0 + 0.09T_0} = 1.27.
 $$
@@ -77,6 +84,7 @@ $$
 - 经方案 2 优化的部分的时间：$T_0 \cdot \text{Fe}_2 / \text{Se}_2$
 
 因此，系统加速比为
+
 $$
 \begin{align*}
     S_n & = \frac{T_0}{(1 - \text{Fe}_1 - \text{Fe}_2)T_0 + T_0 \cdot \text{Fe}_1 / \text{Se}_1 + T_0 \cdot \text{Fe}_2 / \text{Se}_2} \\
