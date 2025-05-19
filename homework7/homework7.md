@@ -133,8 +133,10 @@ loop: L.D       F0,0(R1)
       ADD.D     F2,F6,F2
       DADDUI    R2,R2,#-24
 
-      BNE       R1,R3,loop
+      
       ADD.D     F2,F10,F2
+      BNE       R1,R3,loop
+      （空转）
 ```
 
 可以看出，调度后的代码中无流水线“空转”周期。
