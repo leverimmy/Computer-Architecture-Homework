@@ -1,3 +1,22 @@
 # Computer-Architecture-Homework
 
-Repository for the codes of the homework of Computer Architecture, Spring 2025
+本仓库是 2025 年春季学期《计算机系统结构》书面作业的解答。
+
+## 作业目录
+
+| 作业名称 |          教材习题           |    文件夹    |
+| :------: | :-------------------------: | :----------: |
+| 第 1 次  |         三道补充题          | `homework1/` |
+| 第 2 次  | 7.8、7.11、7.12、7.13、7.16 | `homework2/` |
+| 第 3 次  |      2.11、2.12、2.13       | `homework3/` |
+| 第 4 次  |       3.9、3.10、3.12       | `homework4/` |
+| 第 5 次  |     4.6、4.7、4.8、4.9      | `homework5/` |
+| 第 6 次  |          5.8、5.9           | `homework6/` |
+| 第 7 次  |     6.4、6.5、6.6、6.8      | `homework7/` |
+| 第 8 次  |    9.9、9.10、9.11、9.12    | `homework8/` |
+
+## LICENSE
+
+除非另有说明，本仓库的内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。在遵守许可协议的前提下，您可以自由地分享、修改本文档的内容，但不得用于商业目的。
+
+如果您认为文档的部分内容侵犯了您的合法权益，请联系项目维护者，我们会尽快删除相关内容。
